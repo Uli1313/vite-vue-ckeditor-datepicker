@@ -70,31 +70,9 @@ export default class MyUploadAdapter {
   _sendRequest(file) {
       const data = new FormData();
 
-      data.append('upload', file);
+      data.append('file-to-upload', file);
 
-      // let jsonResponse = null;
-
-      // this.xhr.onreadystatechange = (e) => {
-      //   if (this.xhr.readyState !== 4) {
-      //     return;
-      //   }
-    
-      //   if (this.xhr.status === 200) {
-      //     console.log('SUCCESS');
-      //     console.log(this.xhr)
-      //     jsonResponse = this.xhr.response.imageUrl;
-      //     console.log(jsonResponse)
-      //   } else {
-      //     console.warn('request_error');
-      //   }
-      // };
-
-
-
-      console.log(data)
       this.xhr.send(data);
-
-      // return jsonResponse
   }
 }
 

@@ -91,7 +91,7 @@ import MyUploadAdapter from '@/methods/uploadImage.js';
     },
     methods: {
       onSubmit() {
-        console.log('表單提交成功', this.email, this.date);
+        console.log('表單提交成功', this.email, this.date, this.editorData);
       },
       blurEvent() {
         console.log('blur')
