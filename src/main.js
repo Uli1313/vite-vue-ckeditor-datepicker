@@ -18,6 +18,9 @@ import * as AllRules from '@vee-validate/rules'
 import { localize, setLocale } from '@vee-validate/i18n';
 import zhTW from '@vee-validate/i18n/dist/locale/zh_TW.json';
 
+// VueAxios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import App from './App.vue'
 import router from './router'
@@ -42,5 +45,6 @@ app.component('ErrorMessage', ErrorMessage);
 app.use(createPinia())
 app.use(router)
 app.use(CKEditor)
+app.use(VueAxios, axios)
 
 app.mount('#app')
