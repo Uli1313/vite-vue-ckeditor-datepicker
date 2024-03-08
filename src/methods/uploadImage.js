@@ -52,7 +52,7 @@ export default class MyUploadAdapter {
           }
 
           resolve({
-              default: response.url
+              default: response.imageUrl
           });
       });
 
