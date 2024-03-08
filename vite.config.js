@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  base: '/vite-vue-ckeditor-datepicker/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
